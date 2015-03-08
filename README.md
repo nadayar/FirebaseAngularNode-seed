@@ -26,13 +26,6 @@ git clone https://github.com/andela-bnkengsa/FirebaseAngularNode-seed.git
 cd FirebaseAngularNode-seed
 ```
 
-### Configure
-
- * specify your Firebase URL in `config/config.js`
- * generate a UID and set the serverUID in `config/config.js` (this is to authenticate the node server with Firebase)
- * specify your Firebase secret Key in `config/config.js`
- * specify your Test Firebase URL in `app\js\services\refs.js` (this is for the client tests to run properly)
-
 ### Install Dependencies
 
 ```
