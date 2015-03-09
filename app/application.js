@@ -21,7 +21,7 @@ require('./js/controllers/login.js');
 require('./js/controllers/menu.js');
 require('./js/controllers/users.js');
 
-window.Skilltree = angular.module("Skilltree", [
+window.MyApp = angular.module("MyApp", [
   'ui.router',
   'myapp.controllers',
   'myapp.directives',
@@ -31,7 +31,7 @@ window.Skilltree = angular.module("Skilltree", [
   'ngMaterial'
 ]);
 
-Skilltree.run(['$rootScope', '$state', 'Authentication', 'Refs', 'Toast',
+MyApp.run(['$rootScope', '$state', 'Authentication', 'Refs', 'Toast',
   function($rootScope, $state, Authentication, Refs, Toast) {
   $rootScope._ = window._;
   $rootScope.moment = window.moment;
@@ -52,7 +52,7 @@ Skilltree.run(['$rootScope', '$state', 'Authentication', 'Refs', 'Toast',
 }]);
 
 /* application routes */
-Skilltree.config(['$stateProvider','$locationProvider',
+MyApp.config(['$stateProvider','$locationProvider',
  function($stateProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
   $stateProvider
